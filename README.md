@@ -45,6 +45,6 @@ Report job configuration
 Running Example
 ---------------
 
-    docker run -d -e BACKUP_INTERVAL=1d -e SEND_BACKUP_TO_AWS=false -v /backup-jasper:/backup drecchia/jasperserver-cp:6.0.1
+    docker run -d -e BACKUP_INTERVAL=1d -e SEND_BACKUP_TO_AWS=false -v /backup-jasper:/backup -p 8080:8080 drecchia/jasperserver-cp:6.0.1
 
 
